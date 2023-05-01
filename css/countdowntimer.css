@@ -13,7 +13,7 @@
     transition: all .45s ease;    
 }
 body{    
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 100vw;
     height: 100vh;
@@ -23,15 +23,26 @@ body .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
     height: 100vh;
     text-align: center;
     background: #0a2186da;
 }
-
 video{
-    background: url(../video/count-video.mp4);
-    width: 100vw;
+    /*background: url(../video/count-video.mp4);*/
     height: 100vh;
     position: absolute;
     z-index: -1;
 }
+.countdown { background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.time { background: rebeccapurple;
+    margin: 30px;
+    padding: 30px;
+    font-size: 50px;
+}
+
