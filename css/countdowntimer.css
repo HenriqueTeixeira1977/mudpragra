@@ -13,9 +13,6 @@
     transition: all .45s ease;    
 }
 body{    
-    background: red;  
-    /*background: url(../video/count-video.mp4);*/
-   
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -30,11 +27,11 @@ body .container {
     text-align: center;
     background: #0a2186da;
 }
-/*
+
 video{
     background: url(../video/count-video.mp4);
     width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: -1;
-}*/
+}
