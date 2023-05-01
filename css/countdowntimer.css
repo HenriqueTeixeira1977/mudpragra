@@ -12,37 +12,104 @@
     scroll-behavior: smooth;
     transition: all .45s ease;    
 }
-body{    
+body{ 
+    background: url(../img/bg-count.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     padding: 0;
     width: 100vw;
     height: 100vh;
-}
-body .container {
+}/*
+video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+}*/
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
-    height: 100vh;
+    padding: 50px;
+    width: 95vw;
+    height: 95vh;
     text-align: center;
-    background: #0a2186da;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(2px);
 }
-video{
-    /*background: url(../video/count-video.mp4);*/
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-}
-.countdown { background: red;
+.countdown {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.time { background: rebeccapurple;
-    margin: 30px;
-    padding: 30px;
-    font-size: 50px;
+h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 10px 10px 10px black;
 }
-
+h2{
+    font-size: 2rem;
+    color: rgb(251, 255, 0);
+    text-shadow: 10px 10px 10px black;
+}
+h3{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 10px black;
+}
+h4{
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+.time { background: rgba(252, 252, 253, 0.256);
+    width: 200px;
+    margin: 10px;
+    padding: 20px 0;
+    font-size: 2rem;
+    color: rgb(205, 205, 205);
+    text-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+.time h2{
+    font-size: 5rem;
+    color: rgb(180, 180, 180);
+}
+#days {
+    padding: 0 55px;
+}
+#hours {
+    padding: 0 55px;
+}
+#minutes {
+    padding: 0 55px;
+}
+#seconds {
+    padding: 0 50px;
+}
+a {
+    background: rgb(41, 205, 0);
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    margin: 50px;
+    padding: 7px 70px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
