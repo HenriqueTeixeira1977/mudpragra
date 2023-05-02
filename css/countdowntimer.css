@@ -10,7 +10,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: all .45s ease;    
+    transition: all .3s ease;    
 }
 body{ 
     background: url(../img/bg-count.jpg);
