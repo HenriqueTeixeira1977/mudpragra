@@ -185,15 +185,72 @@ a {
         font-size: .8rem;
     }
     a{
-        font-size: 1rem;
+        font-size: 2rem;
         width: 100%;
         padding: 20px 0px;
     }
 }
 /*  Mobile - iPhone 14 Pro Max – 1  */
 @media screen and (min-width: 376px) and (max-width: 430px){
-
+    body { 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 95vw;        
+        height: 95vh;
+        margin: 20px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .container h2{
+        font-size: 1.5rem;
+        margin-top: 80px;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .countdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 300px;
+        height: 500px;
+    }
+    .time{
+        width: 70px;
+        height: 80px;
+        margin: 5px;
+    }
+    .time h2{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .time small{
+        font-size: .8rem;
+    }
+    a{
+        font-size: 2rem;
+        width: 100%;
+        padding: 20px 0px;
+    }
 }
+
+
+
 /*  Tablet - iPad  */
 @media screen and (min-width: 431px) and (max-width: 768px){
 
