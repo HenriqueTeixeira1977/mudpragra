@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*  Mobile - iPhone 13 Mini */
+@media screen and (min-width: 0px) and (max-width: 375px){
+
+}
+/*  Mobile - iPhone 14 Pro Max – 1  */
+@media screen and (min-width: 376px) and (max-width: 430px){
+
+}
+/*  Tablet - iPad  */
+@media screen and (min-width: 431px) and (max-width: 768px){
+
+}
+/*  Tablet - iPad Pro 12,9"  */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+/*  Desktop - Web 1280  */
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+
+}
+/*  Desktop - Web 1366  */
+@media screen and (min-width: 1281px) and (max-width: 1366px){
+
+}
+/*  Desktop - Web 1920  */
+@media screen and (min-width: 1367px) and (max-width: 1920px){
+
+}

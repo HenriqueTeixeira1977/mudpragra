@@ -43,7 +43,7 @@ video{
     flex-direction: column;
     margin: auto;
     padding: 50px;
-    width: 95vw;
+    width: 80vw;
     height: 95vh;
     text-align: center;
     background: rgba(0, 0, 0, 0.45);
@@ -59,37 +59,53 @@ video{
 }
 h1{
     font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
     color: white;
     text-shadow: 10px 10px 10px black;
 }
+h1 span {
+    color: rgb(50, 255, 78);
+    font-weight: 500;
+
+}
 h2{
     font-size: 2rem;
-    color: rgb(251, 255, 0);
-    text-shadow: 10px 10px 10px black;
+    font-weight: 200;
+    color: rgb(50, 255, 78);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.681);
 }
 h3{
     font-size: 1.5rem;
+    font-weight: 200;
     color: rgb(255, 255, 255);
     text-shadow: 10px 10px 10px black;
 }
 h4{
     font-size: 1.3rem;
+    font-weight: 100;
     color: white;
     text-shadow: 10px 10px 10px black;
 }
 .time { background: rgba(252, 252, 253, 0.256);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 200px;
     margin: 10px;
     padding: 20px 0;
     font-size: 2rem;
     color: rgb(205, 205, 205);
     text-shadow: 10px 10px 10px black;
-    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.187);
     border-radius: 10px;
 }
 .time h2{
     font-size: 5rem;
-    color: rgb(180, 180, 180);
+    color: rgb(50, 255, 78);
+    text-align: center;
 }
 #days {
     padding: 0 55px;
@@ -112,4 +128,91 @@ a {
     padding: 7px 70px;
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+/*  Responsive Area  */
+
+/*  Mobile - iPhone 13 Mini */
+@media screen and (min-width: 0px) and (max-width: 375px){
+    body { 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 95vw;        
+        height: 95vh;
+        margin: 20px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .container h2{
+        font-size: 1.5rem;
+        margin-top: 80px;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .countdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 300px;
+        height: 500px;
+    }
+    .time{
+        width: 70px;
+        height: 80px;
+        margin: 5px;
+    }
+    .time h2{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .time small{
+        font-size: .8rem;
+    }
+    a{
+        font-size: 1rem;
+        width: 100%;
+        padding: 20px 0px;
+    }
+}
+/*  Mobile - iPhone 14 Pro Max – 1  */
+@media screen and (min-width: 376px) and (max-width: 430px){
+
+}
+/*  Tablet - iPad  */
+@media screen and (min-width: 431px) and (max-width: 768px){
+
+}
+/*  Tablet - iPad Pro 12,9"  */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+/*  Desktop - Web 1280  */
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+
+}
+/*  Desktop - Web 1366  */
+@media screen and (min-width: 1281px) and (max-width: 1366px){
+    h1{
+        font-size: 3rem;
+    }
+}
+/*  Desktop - Web 1920  */
+@media screen and (min-width: 1367px) and (max-width: 1920px){
+
 }
