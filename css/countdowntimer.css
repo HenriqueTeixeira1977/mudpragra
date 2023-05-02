@@ -136,58 +136,60 @@ a {
 @media screen and (min-width: 0px) and (max-width: 375px){
     body { 
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100vw;
         height: 100vh;
+        margin: auto;
     }
     .container{
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 95vw;        
         height: 95vh;
-        margin: 20px;
         padding: 20px;
+        margin: auto;
     }
-    h1{
-        font-size: 1.5rem;
+    .container h1{
+        font-size: 1rem;
     }
     .container h2{
-        font-size: 1.5rem;
+        font-size: .9rem;
         margin-top: 80px;
     }
-    h3{
-        font-size: 1.2rem;
+    .container h3{
+        font-size: .8rem;
     }
-    h4 {
-        font-size: 1rem;
+    .container h4 {
+        font-size: .7rem;
     }
     .countdown{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 300px;
-        height: 500px;
+        width: 90%;
+        height: 20%;
     }
     .time{
-        width: 70px;
+        width: 50px;
         height: 80px;
-        margin: 5px;
+        margin: 2px;
     }
     .time h2{
-        font-size: 2rem;
+        font-size: 1rem;
         margin-top: 0;
     }
     .time small{
-        font-size: .8rem;
+        font-size: .5rem;
     }
     a{
-        font-size: 2rem;
+        font-size: 1rem;
         width: 100%;
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
 }
 /*  Mobile - iPhone 14 Pro Max – 1  */
@@ -198,6 +200,7 @@ a {
         align-items: center;
         flex-direction: column;
         height: 100vh;
+        margin: auto;
     }
     .container{
         display: flex;
@@ -206,11 +209,10 @@ a {
         flex-direction: column;
         width: 95vw;        
         height: 95vh;
-        margin: 20px;
         padding: 20px;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .container h2{
         font-size: 1.5rem;
