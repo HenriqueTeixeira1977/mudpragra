@@ -253,7 +253,61 @@ a {
 
 /*  Tablet - iPad  */
 @media screen and (min-width: 431px) and (max-width: 768px){
-
+    body { 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 95vw;        
+        height: 95vh;
+        margin: 20px;
+        padding: 20px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .container h2{
+        font-size: 2.5rem;
+        margin-top: 70px;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .countdown{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 500px;
+        height: 500px;
+    }
+    .time{
+        width: 100px;
+        height: 200px;
+        margin: 5px;
+    }
+    .time h2{
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+    .time small{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 2rem;
+        width: 70%;
+        padding: 10px 0px;
+    }
 }
 /*  Tablet - iPad Pro 12,9"  */
 @media screen and (min-width: 769px) and (max-width: 1024px){
