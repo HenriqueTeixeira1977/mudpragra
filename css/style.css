@@ -16,13 +16,15 @@
 body{
     margin: auto;
     padding: 0;
-    width: 100%;
-    height: 100vh;
 }
 /*  Inicio do Header/Nav  */
 
 header{
-    background:rgb(255, 255, 255);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(255, 255, 255, 0.55);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +33,18 @@ header{
     margin: auto;
     padding: 0 3%;
 }
+header.sticky{
+    height: 90px;
+    background: #ffea00;
+    box-shadow: 0px 10px 10px 0px #00000072;
+    border-bottom: rgb(0, 102, 255) solid 5px;
+    transition: all .2s ease;
+}   
 .btn-mbl{
     display: none;
 }
-.logo a{ /*  background:rebeccapurple; */
+.logo a{  /*background:rebeccapurple; */
+    font-size: 2rem;
     color: rgb(25, 0, 184);
 }
 nav{/*background: red;*/
@@ -45,55 +55,140 @@ nav a{/*background: gray;*/
     color: rgb(4, 0, 255);
     padding: 5px;
 }
-nav .button {background: green;
-    padding: 10px 20px;
+nav .button {
+    background: green;
+    padding: 7px 20px;
     border-radius: 20px;
     color: white;
 }
+/*  *************************************************** */
 /*  Fim do Header/Nav  **/
 /*  Inicio do Main  */
 main{background: gainsboro;
-    height: 100vh;
     text-align: center;
 }
 .home{background: rgb(223, 223, 223);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .home .container {background: yellow;
     display: flex;
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
     margin: auto;
+    padding: 0 5%;
 }
 .home .container article{background: rgb(0, 4, 81);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     width: 50%;
-    height: 50%;
+    height: 90%;
+    z-index: 1;
 }
-.home .container aside{background: rgb(14, 107, 0);
-    width: 50%;
-    height: 50%;
+.home .container article h1{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.home .container article h2{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.home .container article h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+.home .container article a {
+    background: green;
+    border-radius: 7px;
+    font-size: 2rem;
+    color: white;    
+    padding: 10px 70px;
+    margin-top: 30px;
+
 }
 
-.solucoes{background: rgb(0, 5, 108);
+.home .container aside{background: rgb(14, 107, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+.home .container aside img{
+    background: red;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.solucoes{background: rgb(160, 160, 160);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .diferenciais{background: rgb(255, 119, 0);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .trabalhos{background: rgb(29, 96, 0);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .depoimentos{background:red;
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .sobre{background: rgb(255, 251, 0);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 .contatos{background: rgb(0, 223, 253);
     height: 100vh;
+    padding: 100px 0 0 0;
 }
 
-footer {background: rgb(44, 44, 44);
+footer {background: rgb(6, 0, 94);
+    font-weight: 200;
+    color: aliceblue;
     text-align: center;
-
+    padding: 30px 0;
+}
+.menu-footer a{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+footer a{
+    font-size: .8rem;
+    font-weight: 200;
+    color: rgb(255, 251, 0);
 }
