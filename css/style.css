@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+}
+body{
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header{
+    background:rgb(181, 181, 181);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 0 3%;
+}
+.btn-mbl{
+    display: none;
+}
+.logo a{background:rebeccapurple;
+    color: white;
+}
+nav{background: red;
+    color: aliceblue;
+    padding: 10px;
+}
+nav a{background: gray;
+    color: white;
+    padding: 10px;
+}
+nav .button {background: green;
+    color: white;
+}
+main{background: gainsboro;
+    height: 100vh;
+    text-align: center;
+}
+.home{background: rgb(223, 223, 223);
+    height: 100vh;
+}
+.home .container {background: yellow;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.home .container article{background: rgb(0, 4, 81);
+    width: 50%;
+    height: 50%;
+}
+.home .container aside{background: rgb(14, 107, 0);
+    width: 50%;
+    height: 50%;
+}
+
+.solucoes{background: rgb(0, 5, 108);
+    height: 100vh;
+}
+.diferenciais{background: rgb(255, 119, 0);
+    height: 100vh;
+}
+.trabalhos{background: rgb(29, 96, 0);
+    height: 100vh;
+}
+.depoimentos{background:red;
+    height: 100vh;
+}
+.sobre{background: rgb(255, 251, 0);
+    height: 100vh;
+}
+.contatos{background: rgb(0, 223, 253);
+    height: 100vh;
+}
+
+footer {background: rgb(44, 44, 44);
+    text-align: center;
+}
