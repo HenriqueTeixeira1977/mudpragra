@@ -16,13 +16,13 @@
 body{
     margin: auto;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-
 }
+/*  Inicio do Header/Nav  */
 
 header{
-    background:rgb(181, 181, 181);
+    background:rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,20 +34,24 @@ header{
 .btn-mbl{
     display: none;
 }
-.logo a{background:rebeccapurple;
-    color: white;
+.logo a{ /*  background:rebeccapurple; */
+    color: rgb(25, 0, 184);
 }
-nav{background: red;
+nav{/*background: red;*/
     color: aliceblue;
     padding: 10px;
 }
-nav a{background: gray;
-    color: white;
-    padding: 10px;
+nav a{/*background: gray;*/
+    color: rgb(4, 0, 255);
+    padding: 5px;
 }
 nav .button {background: green;
+    padding: 10px 20px;
+    border-radius: 20px;
     color: white;
 }
+/*  Fim do Header/Nav  **/
+/*  Inicio do Main  */
 main{background: gainsboro;
     height: 100vh;
     text-align: center;
@@ -91,4 +95,5 @@ main{background: gainsboro;
 
 footer {background: rgb(44, 44, 44);
     text-align: center;
+
 }
