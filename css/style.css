@@ -29,7 +29,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 88px;
     margin: auto;
     padding: 0 3%;
 }
@@ -64,16 +64,22 @@ nav .button {
 /*  Fim do Header/Nav  */
 /*  *************************************************** */
 /*  Inicio do Main  */
-main{background: rgb(255, 0, 0);
+main{/*background: rgb(255, 0, 0);*/
     text-align: center;
     margin: auto;
 }
 /*  Fim do Main  */
 /*  *************************************************** */
 /*  Inicio do Home  */
-.home{background: rgb(249, 249, 249);
+.home{
+    /*background: rgb(249, 249, 249);
     background: rgb(107,34,195);
     background: linear-gradient(120deg, rgb(212, 212, 212) 0%, rgb(0, 47, 255) 100%);    
+    */
+    background: url(../img/bg3-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     padding: 100px 0 0 0;
 }
@@ -141,11 +147,11 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Home  */
 /*  *************************************************** */
 /*  Inicio do Soluções  */
-.solucoes{background: rgb(247, 247, 247);
+.solucoes{/*background: rgb(0, 0, 215);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.solucoes .container{background: rebeccapurple;
+.solucoes .container{/*background: rgb(0, 0, 215);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,15 +175,11 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Diferenciais  */
 /*  *************************************************** */
 /*  Inicio do Diferenciais  */
-.diferenciais{background: rgb(255, 119, 1);
+.diferenciais{/*background: rgb(247, 247, 247);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.diferenciais{background: rgb(247, 247, 247);
-    height: 100vh;
-    padding: 100px 0 0 0;
-}
-.diferenciais .container{background: yellow;
+.diferenciais .container{/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +187,7 @@ main{background: rgb(255, 0, 0);
     width: 100%;
     height: 100%;
 }
-.diferenciais .container .box{background: rebeccapurple;
+.diferenciais .container .box{background: rgb(0, 0, 215);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,15 +203,11 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Diferenciais  */
 /*  *************************************************** */
 /*  Inicio do Trabalhos  */
-.trabalhos{background: rgb(29, 96, 0);
+.trabalhos{/*background: rgb(247, 247, 247);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.trabalhos{background: rgb(247, 247, 247);
-    height: 100vh;
-    padding: 100px 0 0 0;
-}
-.trabalhos .container{background: rebeccapurple;
+.trabalhos .container{/*background: rgb(0, 0, 215);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,15 +231,11 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Trabalhos  */
 /*  *************************************************** */
 /*  Inicio do Depoimentos  */
-.depoimentos{background:red;
+.depoimentos{/*background: rgb(247, 247, 247);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.depoimentos{background: rgb(247, 247, 247);
-    height: 100vh;
-    padding: 100px 0 0 0;
-}
-.depoimentos .container{background: yellow;
+.depoimentos .container{/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +243,7 @@ main{background: rgb(255, 0, 0);
     width: 100%;
     height: 100%;
 }
-.depoimentos .container .box{background: rebeccapurple;
+.depoimentos .container .box{background: rgb(0, 0, 215);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,11 +260,11 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Depoimentos  */
 /*  *************************************************** */
 /*  Inicio do Sobre  */
-.sobre{background: rgb(255, 251, 0);
+.sobre{/*background: rgb(255, 251, 0);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.sobre .container{background: rebeccapurple;
+.sobre .container{/*background: rgb(0, 0, 215);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,16 +274,44 @@ main{background: rgb(255, 0, 0);
     margin: auto;
     padding: 20px;
 }
-.sobre article{background: blue;
+.sobre article{/*background: blue;*/
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: column;
     width: 100%;
     height: 100%;
     text-align: right;
 }
-.sobre aside{background: rgb(255, 0, 0);
+.sobre article h1{
+    font-size: 3rem;
+    text-align: left;
+    line-height: 1;
+    color: rgb(0, 0, 170); 
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.207);   
+}
+.sobre article h2{
+    font-size: 2.5rem;
+    line-height: 1;
+
+    color: rgb(255, 225, 0);
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.207);   
+
+}
+.sobre article p{
+    font-size: 1.2rem;
+
+    width: 90%;
+}
+.sobre article a{
+     background: green;
+    border-radius: 7px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 70px;
+    margin-top: 30px;
+}
+.sobre aside{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,9 +321,57 @@ main{background: rgb(255, 0, 0);
 /*  Fim do Sobre  */
 /*  *************************************************** */
 /*  Inicio do Contatos  */
-.contatos{background: rgb(0, 223, 253);
+.contatos{background: rgb(6, 0, 94);
     height: 100vh;
     padding: 100px 0 0 0;
+}
+.contatos .iframe {
+    width: 100%;
+}
+.contatos article{background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+}
+.contatos article h1{
+    font-size: 5rem;
+    color: yellow;
+}
+.contatos article h2{
+    font-size: 2rem;
+    color: yellow;
+}
+.contatos article p{
+    font-size: 1.5rem;
+}
+.contatos article a{
+    background: green;
+    border-radius: 7px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 70px;
+    margin-top: 30px;
+}
+.contatos aside .redes{background: #ffea00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.contatos aside .redes a{background: red;
+    font-size: 2rem;
+    color: blue;
+    margin: 20px;
+    padding: 0 10px;
+
 }
 /*  Fim do Contatos  */
 /*  *************************************************** */
