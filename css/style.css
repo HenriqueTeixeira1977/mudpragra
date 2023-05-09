@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -17,14 +16,16 @@ body{
     margin: auto;
     padding: 0;
 }
-/*  Inicio do Header/Nav  */
+/*  Fim do Body  */
+/*  *************************************************** */
+/*  Inicio do Main  */
 
 header{
     z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
-    background:rgba(255, 255, 255, 0.55);
+    background:rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,14 +65,18 @@ nav .button {
 /*  Fim do Header/Nav  */
 /*  *************************************************** */
 /*  Inicio do Main  */
-main{background: gainsboro;
+main{background: rgb(255, 0, 0);
     text-align: center;
+    margin: auto;
 }
-.home{background: rgb(223, 223, 223);
+.home{background: rgb(249, 249, 249);
+    background: rgb(107,34,195);
+    background: linear-gradient(0deg, rgba(107,34,195,1) 0%, rgba(45,206,253,1) 100%);    
     height: 100vh;
     padding: 100px 0 0 0;
+
 }
-.home .container {background: yellow;
+.home .container {/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +90,7 @@ main{background: gainsboro;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 90%;
 }
 .home .container article h1{
@@ -156,16 +161,43 @@ main{background: gainsboro;
     height: 500px;
     margin: 20px;
     padding: 20px;
-
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
 }
 
 /*  Fim do Home  */
 /*  *************************************************** */
 /*  Inicio do Soluções  */
 
-.diferenciais{background: rgb(255, 119, 0);
+.diferenciais{background: rgb(255, 119, 1);
     height: 100vh;
     padding: 100px 0 0 0;
+}
+.diferenciais{background: rgb(247, 247, 247);
+    height: 100vh;
+    padding: 100px 0 0 0;
+}
+.diferenciais .container{background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.diferenciais .container .box{background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
 }
 
 /*  Fim do Home  */
@@ -217,16 +249,25 @@ footer {background: rgb(6, 0, 94);
     padding: 30px 0;
 }
 footer .menu-footer a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 5px;
+    font-weight: 200;
+    color: rgb(255, 251, 0);
 }
-footer a{
+footer .menu-footer a:hover{
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+
+footer .rodape a{
     font-size: .8rem;
     font-weight: 200;
     color: rgb(255, 251, 0);
 }
-footer a:hover{
-    font-size: .8rem;
+footer .rodape a:hover{
+    font-size: 1rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
 }
+
