@@ -19,7 +19,6 @@ body{
 /*  Fim do Body  */
 /*  *************************************************** */
 /*  Inicio do Main  */
-
 header{
     z-index: 999;
     position: fixed;
@@ -69,18 +68,20 @@ main{background: rgb(255, 0, 0);
     text-align: center;
     margin: auto;
 }
+/*  Fim do Main  */
+/*  *************************************************** */
+/*  Inicio do Home  */
 .home{background: rgb(249, 249, 249);
     background: rgb(107,34,195);
-    background: linear-gradient(0deg, rgba(107,34,195,1) 0%, rgba(45,206,253,1) 100%);    
+    background: linear-gradient(120deg, rgb(212, 212, 212) 0%, rgb(0, 47, 255) 100%);    
     height: 100vh;
     padding: 100px 0 0 0;
-
 }
 .home .container {/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: auto;
     padding: 0 5%;
@@ -165,11 +166,9 @@ main{background: rgb(255, 0, 0);
     border: 5px solid #ffffff;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
 }
-
-/*  Fim do Home  */
+/*  Fim do Diferenciais  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
+/*  Inicio do Diferenciais  */
 .diferenciais{background: rgb(255, 119, 1);
     height: 100vh;
     padding: 100px 0 0 0;
@@ -199,49 +198,114 @@ main{background: rgb(255, 0, 0);
     border: 5px solid #ffffff;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
 }
-
-/*  Fim do Home  */
+/*  Fim do Diferenciais  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
-
+/*  Inicio do Trabalhos  */
 .trabalhos{background: rgb(29, 96, 0);
     height: 100vh;
     padding: 100px 0 0 0;
 }
-
-/*  Fim do Home  */
+.trabalhos{background: rgb(247, 247, 247);
+    height: 100vh;
+    padding: 100px 0 0 0;
+}
+.trabalhos .container{background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.trabalhos .container .box{background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
+}
+/*  Fim do Trabalhos  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
-
+/*  Inicio do Depoimentos  */
 .depoimentos{background:red;
     height: 100vh;
     padding: 100px 0 0 0;
 }
-
-/*  Fim do Home  */
+.depoimentos{background: rgb(247, 247, 247);
+    height: 100vh;
+    padding: 100px 0 0 0;
+}
+.depoimentos .container{background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.depoimentos .container .box{background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
+    color: yellow;
+}
+/*  Fim do Depoimentos  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
+/*  Inicio do Sobre  */
 .sobre{background: rgb(255, 251, 0);
     height: 100vh;
     padding: 100px 0 0 0;
 }
-
-/*  Fim do Home  */
+.sobre .container{background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.sobre article{background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+.sobre aside{background: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/*  Fim do Sobre  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
+/*  Inicio do Contatos  */
 .contatos{background: rgb(0, 223, 253);
     height: 100vh;
     padding: 100px 0 0 0;
 }
-
-/*  Fim do Home  */
+/*  Fim do Contatos  */
 /*  *************************************************** */
-/*  Inicio do Soluções  */
-
+/*  Inicio do Footer  */
 footer {background: rgb(6, 0, 94);
     font-weight: 200;
     color: aliceblue;
@@ -258,8 +322,6 @@ footer .menu-footer a:hover{
     font-weight: 300;
     color: rgb(255, 255, 255);
 }
-
-
 footer .rodape a{
     font-size: .8rem;
     font-weight: 200;
