@@ -61,8 +61,8 @@ nav .button {
     border-radius: 20px;
     color: white;
 }
+/*  Fim do Header/Nav  */
 /*  *************************************************** */
-/*  Fim do Header/Nav  **/
 /*  Inicio do Main  */
 main{background: gainsboro;
     text-align: center;
@@ -80,7 +80,7 @@ main{background: gainsboro;
     margin: auto;
     padding: 0 5%;
 }
-.home .container article{background: rgb(0, 4, 81);
+.home .container article{/*background: rgb(0, 4, 81);*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -93,7 +93,7 @@ main{background: gainsboro;
     font-weight: 900;
     line-height: 1;
     text-align: left;
-    color: white;
+    color: rgb(10, 0, 200);
     margin: 0;
     padding: 0;
     z-index: 1;
@@ -101,14 +101,14 @@ main{background: gainsboro;
 .home .container article h2{
     font-size: 2rem;
     font-weight: 300;
-    color: white;
+    color: rgb(10, 0, 200);
     margin: 0;
     padding: 0;
 }
 .home .container article h3{
     font-size: 3rem;
     font-weight: 500;
-    color: white;
+    color: rgb(10, 0, 200);
     margin: 0;
     padding: 0;
 }
@@ -116,11 +116,11 @@ main{background: gainsboro;
     background: green;
     border-radius: 7px;
     font-size: 2rem;
-    color: white;    
+    color: rgb(255, 255, 255);
     padding: 10px 70px;
     margin-top: 30px;
 }
-.home .container aside{background: rgb(14, 107, 0);
+.home .container aside{/*background: rgb(14, 107, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,59 +128,87 @@ main{background: gainsboro;
     height: 90%;
 }
 .home .container aside img{
-    background: red;
-    width: 90%;
-    height: 90%;
+    /*background: red;*/
+    width: 100%;
     margin: auto;
 }
-
-
-
-
-.solucoes{background: rgb(160, 160, 160);
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
+.solucoes{background: rgb(247, 247, 247);
     height: 100vh;
     padding: 100px 0 0 0;
 }
+.solucoes .container{background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.solucoes .container .box{background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
 
 .diferenciais{background: rgb(255, 119, 0);
     height: 100vh;
     padding: 100px 0 0 0;
 }
+
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
+
+
 .trabalhos{background: rgb(29, 96, 0);
     height: 100vh;
     padding: 100px 0 0 0;
 }
+
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
+
+
 .depoimentos{background:red;
     height: 100vh;
     padding: 100px 0 0 0;
 }
+
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
+
 .sobre{background: rgb(255, 251, 0);
     height: 100vh;
     padding: 100px 0 0 0;
 }
+
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
+
 .contatos{background: rgb(0, 223, 253);
     height: 100vh;
     padding: 100px 0 0 0;
 }
+
+/*  Fim do Home  */
+/*  *************************************************** */
+/*  Inicio do Soluções  */
 
 footer {background: rgb(6, 0, 94);
     font-weight: 200;
