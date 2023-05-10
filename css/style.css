@@ -128,8 +128,8 @@ main{/*background: rgb(255, 0, 0);*/
 }
 .home .container {/*background: yellow;*/
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -137,17 +137,17 @@ main{/*background: rgb(255, 0, 0);*/
 }
 .home .container article{/*background: rgb(0, 4, 81);*/
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
     width: 50%;
-    height: 100%;
+    height: 70%;
 }
 .home .container article h1{
     font-size: 6rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: .8;
     text-align: left;
     color: #FFD401;
     margin: 0;
@@ -156,10 +156,7 @@ main{/*background: rgb(255, 0, 0);*/
 }
 .home .container article h1 span{
     color: white;
-    text-d
 }
-
-
 .home .container article h2{
     font-size: 2rem;
     font-weight: 300;
@@ -168,7 +165,7 @@ main{/*background: rgb(255, 0, 0);*/
     padding: 0;
 }
 .home .container article h3{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     color: rgb(255, 255, 255);
     margin: 0;
@@ -177,6 +174,7 @@ main{/*background: rgb(255, 0, 0);*/
 .home .container article a {
     background: green;
     border-radius: 7px;
+    border: #ffffff solid 3px;
     font-size: 2rem;
     color: rgb(255, 255, 255);
     padding: 10px 70px;
@@ -187,14 +185,15 @@ main{/*background: rgb(255, 0, 0);*/
 
 .home .container aside{/*background: rgb(14, 107, 0);*/
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 50%;
-    height: 90%;
+    height: 70%;
 }
 .home .container aside img{
     /*background: red;*/
-    width: 100%;
+    width: 750px;
+    height: 600px;
     margin: auto;
 }
 /*  Fim do Home  */
