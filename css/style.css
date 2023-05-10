@@ -10,7 +10,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
 body{
     margin: auto;
@@ -24,7 +24,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background:rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0);
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,34 +34,76 @@ header{
     margin: auto;
     padding: 0 3%;
 }
-header.sticky{
-    height: 90px;
-    background: #ffea00;
-    box-shadow: 0px 10px 10px 0px #00000072;
-    border-bottom: rgb(0, 102, 255) solid 5px;
-    transition: all .2s ease;
-}   
 .btn-mbl{
     display: none;
 }
 .logo a{  /*background:rebeccapurple; */
-    font-size: 1.5rem;
-    color: rgb(25, 0, 184);
+    font-size: 1.8rem;
+    color: #FFD401;
+}
+.logo a span{
+    color: #ffffff;
 }
 nav{/*background: red;*/
     color: aliceblue;
     padding: 10px;
 }
 nav a{/*background: gray;*/
-    color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
     padding: 5px;
+}
+nav a:hover{
+    color: #FFD401;
+    border-bottom: #FFD401 solid 2px;
+    transition: all .1s ease;
 }
 nav .button {
     background: green;
     padding: 7px 20px;
     border-radius: 20px;
+    border: #ffffff solid 2px;
     color: white;
 }
+nav .button:hover {
+    background: rgb(0, 138, 0);
+    border-bottom: none;
+    border: #ffffff solid 2px;
+    color: white;
+}
+header.sticky{
+    height: 70px;
+    background: #ffffff;
+    box-shadow: 0px 10px 10px 0px #00000072;
+    border-bottom: rgb(0, 102, 255) solid 2px;
+    transition: all .1s ease;
+}
+header.sticky .logo a:hover{
+    border-bottom: none;
+}
+header.sticky a{
+    color: rgb(21, 0, 157);
+}
+header.sticky a span{
+    color: #FFD401;
+}
+header.sticky a:hover{
+    color: black;
+    border-bottom: black solid 3px;
+    transition: all 1s ease;
+} 
+header.sticky .button{
+    color: #ffffff;
+    border: none;
+} 
+header.sticky .button:hover{
+    background: rgb(21, 0, 157);
+    color: #FFD401;
+    border-bottom: none;
+    border: none;
+    transition: all .1s ease;
+
+} 
+
 /*  Fim do Header/Nav  */
 /*  *************************************************** */
 /*  Inicio do Main  */
@@ -76,7 +119,7 @@ main{/*background: rgb(255, 0, 0);*/
     background: rgb(107,34,195);
     background: linear-gradient(120deg, rgb(212, 212, 212) 0%, rgb(0, 47, 255) 100%);    
     */
-    background: url(../img/bg3-home.png);
+    background: url(../img/bg-home.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,30 +140,37 @@ main{/*background: rgb(255, 0, 0);*/
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 60%;
-    height: 90%;
+    text-align: left;
+    width: 50%;
+    height: 100%;
 }
 .home .container article h1{
-    font-size: 5rem;
-    font-weight: 900;
+    font-size: 6rem;
+    font-weight: 700;
     line-height: 1;
     text-align: left;
-    color: rgb(10, 0, 200);
+    color: #FFD401;
     margin: 0;
     padding: 0;
     z-index: 1;
 }
+.home .container article h1 span{
+    color: white;
+    text-d
+}
+
+
 .home .container article h2{
     font-size: 2rem;
     font-weight: 300;
-    color: rgb(10, 0, 200);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
 .home .container article h3{
     font-size: 3rem;
-    font-weight: 500;
-    color: rgb(10, 0, 200);
+    font-weight: 200;
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
@@ -131,7 +181,10 @@ main{/*background: rgb(255, 0, 0);*/
     color: rgb(255, 255, 255);
     padding: 10px 70px;
     margin-top: 30px;
+}.home .container article a:hover {
+    background: rgb(1, 102, 1);
 }
+
 .home .container aside{/*background: rgb(14, 107, 0);*/
     display: flex;
     justify-content: center;
@@ -159,7 +212,7 @@ main{/*background: rgb(255, 0, 0);*/
     width: 100%;
     height: 100%;
 }
-.solucoes .container .box{background: yellow;
+.solucoes .container .box{background: #FFD401;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +268,7 @@ main{/*background: rgb(255, 0, 0);*/
     width: 100%;
     height: 100%;
 }
-.trabalhos .container .box{background: yellow;
+.trabalhos .container .box{background: #FFD401;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,32 +377,38 @@ main{/*background: rgb(255, 0, 0);*/
 .contatos{background: rgb(6, 0, 94);
     height: 100vh;
     padding: 100px 0 0 0;
+    color: #FFD401;
 }
 .contatos .iframe {
     width: 100%;
 }
-.contatos article{background: red;
+.contatos article{background: rgb(6, 0, 94);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin: auto;
     padding: 20px;
 }
 .contatos article h1{
-    font-size: 5rem;
-    color: yellow;
+    font-size: 3rem;
+    color: #FFD401;
 }
 .contatos article h2{
     font-size: 2rem;
-    color: yellow;
+    color: rgb(255, 255, 255);
+}
+.contatos article .txt{
+    color: #FFD401;
 }
 .contatos article p{
     font-size: 1.5rem;
+    line-height: .5;
+    color: white;
 }
-.contatos article a{
+.contatos a{
     background: green;
     border-radius: 7px;
     font-size: 2rem;
@@ -357,7 +416,7 @@ main{/*background: rgb(255, 0, 0);*/
     padding: 10px 70px;
     margin-top: 30px;
 }
-.contatos aside .redes{background: #ffea00;
+.contatos aside .redes{/*  background: #ffea00;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,11 +425,17 @@ main{/*background: rgb(255, 0, 0);*/
     margin: auto;
     padding: 20px;
 }
-.contatos aside .redes a{background: red;
+.contatos aside .redes a{background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     font-size: 2rem;
-    color: blue;
+    color: rgb(6, 0, 94);
     margin: 20px;
     padding: 0 10px;
+    border-radius: 10px;
 
 }
 /*  Fim do Contatos  */
