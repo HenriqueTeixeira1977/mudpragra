@@ -10,7 +10,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: all .2s ease;
+    transition: all .45s ease;
 }
 body{
     margin: auto;
@@ -24,8 +24,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background:rgba(255, 255, 255, 0);
-    
+    background:rgba(255, 255, 255, 0);    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +49,9 @@ nav{/*background: red;*/
 }
 nav a{/*background: gray;*/
     color: rgb(255, 255, 255);
+    margin-right: 20px;
     padding: 5px;
+
 }
 nav a:hover{
     color: #FFD401;
@@ -71,36 +72,43 @@ nav .button:hover {
     color: white;
 }
 header.sticky{
-    height: 70px;
+    height: 88px;
     background: #ffffff;
     box-shadow: 0px 10px 10px 0px #00000072;
     border-bottom: rgb(0, 102, 255) solid 2px;
-    transition: all .1s ease;
+    transition: all .45s ease;
 }
 header.sticky .logo a:hover{
     border-bottom: none;
 }
 header.sticky a{
     color: rgb(21, 0, 157);
+    margin-right: 20px;
+    padding: 5px;
+
 }
 header.sticky a span{
     color: #FFD401;
 }
 header.sticky a:hover{
     color: black;
-    border-bottom: black solid 3px;
-    transition: all 1s ease;
+    border-bottom: black solid 2px;
+    transition: all .45s ease;
 } 
 header.sticky .button{
-    color: #ffffff;
-    border: none;
+    background: green;
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: #ffffff solid 2px;
+    color: white;
+
 } 
 header.sticky .button:hover{
     background: rgb(21, 0, 157);
     color: #FFD401;
     border-bottom: none;
     border: none;
-    transition: all .1s ease;
+    transition: all .45s ease;
 
 } 
 
@@ -414,6 +422,7 @@ main{/*background: rgb(255, 0, 0);*/
     color: rgb(255, 255, 255);
     padding: 10px 70px;
     margin-top: 30px;
+    border: #ffffff solid 2px;
 }
 .contatos aside .redes{/*  background: #ffea00;*/
     display: flex;
