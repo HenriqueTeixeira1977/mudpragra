@@ -43,6 +43,9 @@ header{
 .logo a span{
     color: #ffffff;
 }
+.logo a:hover{
+    font-size: 1.9rem;
+}
 nav{/*background: red;*/
     color: aliceblue;
     padding: 10px;
@@ -65,7 +68,7 @@ nav .button {
     border: #ffffff solid 2px;
     color: white;
 }
-nav .button:hover {
+nav .button:hover{
     background: rgb(0, 138, 0);
     border-bottom: none;
     border: #ffffff solid 2px;
@@ -78,22 +81,25 @@ header.sticky{
     border-bottom: rgb(0, 102, 255) solid 2px;
     transition: all .45s ease;
 }
-header.sticky .logo a:hover{
-    border-bottom: none;
-}
-header.sticky a{
+header.sticky .logo a{
     color: rgb(21, 0, 157);
     margin-right: 20px;
-    padding: 5px;
-
 }
-header.sticky a span{
+header.sticky .logo a span{
     color: #FFD401;
 }
-header.sticky a:hover{
-    color: black;
-    border-bottom: black solid 2px;
+header.sticky .logo a:hover{
+    border-bottom: none;
+    font-size: 1.9rem;
+}
+header.sticky nav a{
+    color: rgb(21, 0, 157);
     transition: all .45s ease;
+} 
+header.sticky nav a:hover{
+    color: black;
+    border-bottom: black solid 1px;
+    transition: all .1s ease;
 } 
 header.sticky .button{
     background: green;
@@ -134,7 +140,7 @@ main{/*background: rgb(255, 0, 0);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.home .container {/*background: yellow;*/
+.home .container{/*background: yellow;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -179,7 +185,7 @@ main{/*background: rgb(255, 0, 0);*/
     margin: 0;
     padding: 0;
 }
-.home .container article a {
+.home .container article a{
     background: green;
     border-radius: 7px;
     border: #ffffff solid 3px;
@@ -187,10 +193,10 @@ main{/*background: rgb(255, 0, 0);*/
     color: rgb(255, 255, 255);
     padding: 10px 70px;
     margin-top: 30px;
-}.home .container article a:hover {
+}
+.home .container article a:hover{
     background: rgb(1, 102, 1);
 }
-
 .home .container aside{/*background: rgb(14, 107, 0);*/
     display: flex;
     justify-content: flex-start;
