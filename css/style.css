@@ -206,15 +206,14 @@ main{/*background: rgb(255, 0, 0);*/
 .home .container article a:hover{
     background: rgb(1, 102, 1);
 }
-.home .container aside{/*background: rgb(14, 107, 0);
+.home .container aside{/*background: rgb(14, 107, 0);*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
     height: 100%;
 }
-.home .container aside img{
-    /*background: red;*/
+.home .container aside img{/*background: red;*/
     width: 750px;
     height: 600px;
     margin: auto;
@@ -224,7 +223,7 @@ main{/*background: rgb(255, 0, 0);*/
 /*  Inicio do Home2  */
 .home2{
     background: rgb(255, 255, 255);
-    padding: 50px 10%;
+    padding: 50px 15%;
 }
 .home2 h1{
     font-size: 5rem;
@@ -236,7 +235,7 @@ main{/*background: rgb(255, 0, 0);*/
     text-shadow:10px 10px 10px #00000077;
 }
 .home2 p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #000000;
     line-height: 1.5;
 }
@@ -244,28 +243,37 @@ main{/*background: rgb(255, 0, 0);*/
 /*  Fim do Home2  */
 /*  *************************************************** */
 /*  Inicio do Soluções  */
-.solucoes{/*background: rgb(0, 0, 215);*/
+.solucoes{background: rgb(0, 0, 215);
     height: 100vh;
     padding: 100px 0 0 0;
 }
 .solucoes h1{
     font-weight: 3rem;
 }
-.solucoes .container{/*background: rgb(0, 0, 215);*/
+.solucoes .container{background: rgb(94, 94, 94);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+.solucoes .container .row{background: red;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    margin: auto;
 }
 .solucoes .container .box{background: #FFD401;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 300px;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -399,10 +407,8 @@ main{/*background: rgb(255, 0, 0);*/
 .sobre article h2{
     font-size: 2.5rem;
     line-height: 1;
-
     color: rgb(255, 225, 0);
     text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.207);   
-
 }
 .sobre article p{
     font-size: 1.5rem;
