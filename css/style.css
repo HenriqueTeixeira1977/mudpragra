@@ -388,7 +388,7 @@ main{/*background: rgb(255, 0, 0);*/
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    border: 5px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
     color: white;
 }
