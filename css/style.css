@@ -162,6 +162,7 @@ header.sticky .button:hover{
 main{/*background: rgb(255, 0, 0);*/
     text-align: center;
     margin: auto;
+
 }
 /*  Fim do Main  */
 /*  *************************************************** */
@@ -182,6 +183,7 @@ main{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: 80%;
     height: 80%;
     margin: auto;
@@ -303,6 +305,7 @@ main{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     height: 50%;
     margin-top: 10px;
@@ -313,6 +316,7 @@ main{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     height: 50%;
     margin-top: 50px;
@@ -390,6 +394,7 @@ main{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin: auto;
     width: 90%;
     height: 50%;
@@ -398,11 +403,13 @@ main{/*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     width: 90%;
     height: 50%;
 }
-.diferenciais .container .box{background: var(--azul);
+.diferenciais .container .box{
+    background: var(--azul);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -429,7 +436,8 @@ main{/*background: rgb(255, 0, 0);*/
 .diferenciais .container .box h2{
     font-size: var(--fontam2);
     margin: 0px;
-}.diferenciais .container .box p{
+}
+.diferenciais .container .box p{
     font-size: var(--fontam1);
     margin: 0px;
 }
@@ -526,8 +534,7 @@ main{/*background: rgb(255, 0, 0);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.depoimentos-txt{
-    background: red;
+.depoimentos-txt{ background: red;
     width: 70%;
     margin: auto;
 }
@@ -535,32 +542,27 @@ main{/*background: rgb(255, 0, 0);*/
     font-size: var(--fontam4);
     color: var(--azul);
 }
-.depoimentmos-txt h1 span{
+.depoimentos-txt h1 span{
     color: var(--amarelo);
 }
 .depoimentmos-txt p{
     color: var(--azul);
 }
 .depoimentos .container{ background: green;
-    justify-content: flex-start;
-    width: 90%;
-    height: 50%;
-
-}
-.depoimentos .container{/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 70%;
+    margin: auto;
 }
 .depoimentos .container .box{background: rgb(0, 0, 215);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    width: 450px;
     height: 500px;
     margin: 20px;
     padding: 20px;
