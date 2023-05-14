@@ -530,11 +530,11 @@ main{/*background: rgb(255, 0, 0);*/
 /*  Fim do Trabalhos  */
 /*  *************************************************** */
 /*  Inicio do Depoimentos  */
-.depoimentos{background: rgb(109, 109, 109);
+.depoimentos{ /*background: rgb(109, 109, 109);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.depoimentos-txt{ background: red;
+.depoimentos-txt{ /*background: red;*/
     width: 70%;
     margin: auto;
 }
@@ -545,10 +545,10 @@ main{/*background: rgb(255, 0, 0);*/
 .depoimentos-txt h1 span{
     color: var(--amarelo);
 }
-.depoimentmos-txt p{
+.depoimentos-txt p{
     color: var(--azul);
 }
-.depoimentos .container{ background: green;
+.depoimentos .container{ /*background: green;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -557,7 +557,8 @@ main{/*background: rgb(255, 0, 0);*/
     height: 70%;
     margin: auto;
 }
-.depoimentos .container .box{background: rgb(0, 0, 215);
+.depoimentos .container .box{
+    background: var(--branco);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -566,34 +567,61 @@ main{/*background: rgb(255, 0, 0);*/
     height: 500px;
     margin: 20px;
     padding: 20px;
+    color: var(--azul);
     border-radius: 10px;
     border: 5px solid #ffffff;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
-    color: yellow;
+}
+.depoimentos .container .box:hover{
+    background: #0000005d;
+    color: var(--branco);
+    transform: translateY(-8px);
+    transition: all .1s ease;
+}
+.depoimentos .container .box i{
+    font-size: var(--fontam4);
+    margin: 20px;
+}
+.depoimentos .container .box p{
+    margin: 20px;
+}
+.depoimentos .container .box a{
+    font-size: var(--fontam1);
+    margin: 20px;
+    background: var(--azul);
+    padding: 5px 50px;
+    border: solid 2px var(--branco);
+    border-radius: 10px;
+    color: var(--branco);
+}
+.depoimentos .container .box a:hover{
+    background: var(--preto);
+    color: var(--branco);
+    border: 2px solid var(--branco);
 }
 /*  Fim do Depoimentos  */
 /*  *************************************************** */
 /*  Inicio do Sobre  */
-.sobre{/*background: rgb(255, 251, 0);*/
+.sobre{ /*background: rgb(255, 251, 0);*/
     height: 100vh;
     padding: 100px 0 0 0;
 }
-.sobre .container{/*background: rgb(0, 0, 215);*/
+.sobre .container{ /*background: rgb(0, 0, 215);*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
-    width: 80%;
+    flex-wrap:wrap-reverse;
+    width: 90%;
     height: 90%;
     margin: auto;
-    padding: 20px;
 }
 .sobre article{/*background: blue;*/
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: 100%;
     text-align: right;
 }
@@ -617,54 +645,99 @@ main{/*background: rgb(255, 0, 0);*/
     margin: 30px 0;
 }
 .sobre article a{
-     background: green;
+    background: green;
     border-radius: 7px;
     font-size: 2rem;
     color: rgb(255, 255, 255);
     padding: 10px 70px;
     margin-top: 0px;
 }
-.sobre aside{/*background: rgb(255, 0, 0);*/
+.sobre aside{ /*background: rgb(255, 0, 0);*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 700px;
+    height: 700px;
+}
+.sobre aside img{
+    width: 90%;
 }
 /*  Fim do Sobre  */
 /*  *************************************************** */
 /*  Inicio do Contatos  */
-.contatos{background: rgb(6, 0, 94);
+.contatos{ /*background: red;*/
     height: 100vh;
     padding: 100px 0 0 0;
-    color: #FFD401;
+    color: var(--amarelo);
 }
-.contatos .iframe {
+.contatos .contatos-txt{ /*background: #000000;*/
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.contatos .contatos-txt h1{
+    font-size: var(--fontam4);
+    color: var(--azul);
+}
+.contatos .contatos-txt span{
+    color: var(--amarelo);
+}
+.contatos .contatos-txt p{
+    color: var(--azul);
+}
+.contatos .iframe iframe{
+    margin: auto;
     width: 100%;
-    height: ;
+    height: 40vh;
 }
-.contatos article{background: rgb(6, 0, 94);
+.contatos .container{ background: var(--azul);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 350px;
+    padding: 0px;
+}
+.contatos .btn-wa {
+    width: 300px;
+    margin: 20px;
+    padding: 5px 0;
+    background: var(--verde);
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 7px;
+}
+.contatos .redes a {
+    margin: 20px;
+    padding: 5px 10px;
+    background: var(--branco);
+    color: var(--azul);
+    border-radius: 3px;
+}
+
+/*
+.contatos .container{ background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    padding: 20px;
 }
-.contatos article h1{
-    font-size: 3rem;
-    color: #FFD401;
+.contatos .container h1{
+    font-size: var(--fontam3);
+    color: var(--amarelo);
 }
-.contatos article h2{
-    font-size: 2rem;
+.contatos .container h2{
+    font-size: var(--fontam2);
     color: rgb(255, 255, 255);
 }
-.contatos article .txt{
-    color: #FFD401;
+.contatos .txt{
+    color: var(--amarelo);
 }
-.contatos article p{
+.contatos p{
     font-size: 1.5rem;
     line-height: .5;
     color: white;
@@ -678,7 +751,7 @@ main{/*background: rgb(255, 0, 0);*/
     margin-top: 30px;
     border: #ffffff solid 2px;
 }
-.contatos aside .redes{/*  background: #ffea00;*/
+.contatos .redes{   background: rgb(33, 55, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -687,7 +760,7 @@ main{/*background: rgb(255, 0, 0);*/
     margin: auto;
     padding: 20px;
 }
-.contatos aside .redes a{background: rgb(255, 255, 255);
+.contatos .redes a{ background: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -698,12 +771,19 @@ main{/*background: rgb(255, 0, 0);*/
     margin: 20px;
     padding: 0 10px;
     border-radius: 10px;
-
 }
+*/
 /*  Fim do Contatos  */
 /*  *************************************************** */
 /*  Inicio do Footer  */
-footer {background: rgb(6, 0, 94);
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 150px;
     font-weight: 200;
     color: aliceblue;
     text-align: center;
