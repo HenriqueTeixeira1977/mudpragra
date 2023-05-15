@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*  Mobile - iPhone 13 Mini */
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     *{
         margin: 0;
@@ -58,13 +58,13 @@
     }
     header.sticky .btn{
         color: var(--azul);
-
     }
     header .menu.active{
         right: 0;
     }
 
     header .menu .close-btn{
+        color: #FFFFFF;
         position: absolute;
         top: 0;
         left: 90%;
@@ -72,12 +72,12 @@
     }
     header nav{
         position: fixed;
-        background: rgba(0, 0, 0, 0.923);
+        background: #00008ccd;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         flex-direction: column;
-        min-width: 100%;
+        min-width: 50%;
         height: 100vh;
         top: 0;
         right: -110%;
@@ -90,30 +90,36 @@
         font-size: 2rem;
         margin: 5px;
         padding: 0 15px;
-        color: #FFFFFF;
+        color: var(--branco);
+        font-weight: 500;
     }
     header nav a:hover {
         color: var(--amarelo);
     }
     header .button {
         display: none;
-    }    
-
-
+    }
     .btn{
         display: block;
         font-size: var(--fontam4);
         color: var(--branco);
     }
     .logo img{
-        max-width: 30px;
+        max-width: 12%;
     }
-    .logo a{ 
-
+    nav a{ display: none;    
     }
-
-    nav a{ display: none;
-    
+    .menu-diferenciais {
+        display: none;
+    }
+    .menu-trabalhos {
+        display: none;
+    }
+    .menu-depoimentos {
+        display: none;
+    }
+    .menu-contatos {
+        display: none;
     }
 /*  Fim do Header/Nav  */
 /*  *************************************************** */
@@ -128,7 +134,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
     .home .container{
         display: flex;
@@ -142,7 +148,7 @@
         height: 100vh;
     }
     .home .container aside img{
-        max-width: 60%;
+        max-width:50%;
         height: auto;
     }
     .home .container article{
@@ -214,9 +220,9 @@
         color: var(--amarelo);
     }
     .solucoes .container{
-        display: block;
-        justify-content: flex-start;
-        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
@@ -226,16 +232,17 @@
     }
     .solucoes .container .box{
         background: var(--branco);
+        max-width: 500px;
         margin: 10px;
-        padding: 10px;
+        padding: 30px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 140, 0.078);
         box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.212);
         }
-        .solucoes .container .box:hover{
-            background: var(--amarelo);
-            transform: translateY(-8px);
-        }
+    .solucoes .container .box:hover{
+        background: var(--amarelo);
+        transform: translateY(-8px);
+    }
 /*  Fim da Soluções  */
 /*  ************************
 /*  Inicio do Diferenciais  */
@@ -313,53 +320,172 @@
     }
 
 }
-/*  Mobile - iPhone 14 Pro Max – 1  */
-@media screen and (min-width: 376px) and (max-width: 430px){
-}
-/*  Tablet - iPad  */
-@media screen and (min-width: 431px) and (max-width: 768px){
-    body{
-    }
-    .home{
-    }
-}
-/*  Tablet - iPad Pro 12,9"  */
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    body{
-        background: rgb(0, 255, 13);
-    }
-}
 /*  Desktop - Web 1280  */
-@media screen and (min-width: 1025px) and (max-width: 1280px){
-    body{
-        background: rgb(17, 0, 255);
+@media screen and (min-width: 1025px) and (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        transition: all .2s ease;
     }
-}
-/*  Desktop - Web 1366  */
-@media screen and (min-width: 1281px) and (max-width: 1366px){
-
-    body{
-        background: rgb(242, 0, 255);
+    body{background: #ff0000;
+        margin: auto;
+        padding: 0;
     }
-    header{background: #29A71A;
+    :root{
+        --azul: #00008c;
+        --amarelo: #FFD401;
+        --verde: #29A71A;
+        --preto: #000000;
+        --branco: #FFFFFF;  
+    
+        --fontam6: clamp(1.6em, 1.5em + 3vw, 8rem);
+        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4.1rem);
+        --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
+        --fontam3: clamp(1.1em, .75em + 1.5vw, 3rem);
+        --fontam2: clamp(1.05em, .6em + 1vw, 2rem);
+        --fontam1: clamp(1em, .5em + .7vw, 1rem);
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: #FFFFFF;
+    }
+    ::-webkit-scrollbar-track:hover{
+        background: #ffffff85;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--azul);
+        border-radius: 5px;
+    }
+    /*  Fim do Body  */
+    /*  *************************************************** */
+    /*  Inicio do Main  */
+    header{
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background:rgba(255, 255, 255, 0);    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 88px;
+        margin: auto;
+        padding: 0 3%;
+    }
+    header.sticky{
+        height: 88px;
+        background: var(--branco);
+        box-shadow: 0px 10px 10px 0px #00000072;
+        border-bottom: #00008c solid 5px;
+        transition: all .45s ease;
+    }
+    header.sticky .logo a{
+        color: var(--azul);
+        margin-right: 20px;
+    }
+    header.sticky .logo a span{
+        color: var(--amarelo);
+        text-shadow: #00000012 5px 5px 5px;
+    }
+    header.sticky .logo a:hover{
+        border-bottom: none;
+        font-size: 1.9rem;
+    }
+    header.sticky nav a{
+        color: var(--azul);
+        transition: all .45s ease;
+    } 
+    header.sticky nav a:hover{
+        color: var(--amarelo);
+        border-bottom: #FFD401 solid 1px;
+        transition: all .45s ease;
+    } 
+    header.sticky .button{
+        background: var(--verde);
+        padding: 7px 20px;
+        border-radius: 20px;
+        border: #ffffff solid 2px;
+        color: var(--branco);
+    } 
+    header.sticky .button:hover{
+        background: var(--azul);
+        color: var(--amarelo);
+        border-bottom: none;
+        border: #FFD401 solid 2px;
+        transition: all .45s ease;
+    } 
+    .btn-mbl{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 60px;
+        margin: 10px;
+    }
+    .logo a{  /*background:rebeccapurple; */
+        font-size: var(--fontam3);
+        color: var(--amarelo);
+    }
+    .logo a span{
+        color: var(--branco);
+    }
+    .logo a:hover{
+        font-size: var(--fontam3);
+    }
+    nav{/*background: red;*/
+        color: var(--branco);
+        padding: 10px;
+    }
+    nav a{/*background: gray;*/
+        font-size: var(--fontam1);
+        color: var(--branco);
+        margin-right: 20px;
+        padding: 5px;
     
     }
-    header nav{background: #ff0026;
-        
-
+    nav a:hover{
+        color: var(--amarelo);
+        border-bottom: #FFD401 solid 2px;
+        transition: all .45s ease;
     }
-    header nav a{
-        
+    nav .button {
+        background: var(--verde);
+        padding: 7px 20px;
+        border-radius: 20px;
+        border: #ffffff solid 2px;
+        color: var(--branco);
     }
-
-    .home2{background: red;
-
+    nav .button:hover{
+        background: var(--verde);
+        border-bottom: none;
+        border: #ffffff solid 2px;
+        color: var(--branco);
     }
-
 }
+
+
+
+
+
+/*  Mobile - iPhone 14 Pro Max – 1  */
+@media screen and (min-width: 376px) and (max-width: 430px){}
+/*  Tablet - iPad  */
+@media screen and (min-width: 431px) and (max-width: 768px){}
+/*  Tablet - iPad Pro 12,9"  */
+@media screen and (min-width: 769px) and (max-width: 1024px){}
+/*  Desktop - Web 1366  */
+@media screen and (min-width: 1281px) and (max-width: 1366px){}
 /*  Desktop - Web 1920  */
-@media screen and (min-width: 1367px) and (max-width: 1920px){
-    body{
-        background: rgb(76, 76, 76);
-    }
-}
+@media screen and (min-width: 1367px) and (max-width: 1920px){}
