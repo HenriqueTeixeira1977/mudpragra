@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -10,7 +11,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: all .45s ease;
+    transition: all .2s ease;
 }
 body{
     margin: auto;
@@ -23,12 +24,12 @@ body{
     --preto: #000000;
     --branco: #FFFFFF;  
 
-    --fontam6: 6rem;
-    --fontam5: 5rem;
-    --fontam4: 3rem;
-    --fontam3: 2rem;
-    --fontam2: 1.5rem;
-    --fontam1: 1rem;
+    --fontam6: clamp(1.6em, 1.5em + 3vw, 8rem);
+    --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4.1rem);
+    --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
+    --fontam3: clamp(1.1em, .75em + 1.5vw, 3rem);
+    --fontam2: clamp(1.05em, .6em + 1vw, 2rem);
+    --fontam1: clamp(1em, .5em + .7vw, 1rem);
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -43,7 +44,6 @@ body{
     background: var(--azul);
     border-radius: 5px;
 }
-
 /*  Fim do Body  */
 /*  *************************************************** */
 /*  Inicio do Main  */
@@ -61,6 +61,48 @@ header{
     margin: auto;
     padding: 0 3%;
 }
+header.sticky{
+    height: 88px;
+    background: var(--branco);
+    box-shadow: 0px 10px 10px 0px #00000072;
+    border-bottom: #00008c solid 5px;
+    transition: all .45s ease;
+}
+header.sticky .logo a{
+    color: var(--azul);
+    margin-right: 20px;
+}
+header.sticky .logo a span{
+    color: var(--amarelo);
+    text-shadow: #00000012 5px 5px 5px;
+}
+header.sticky .logo a:hover{
+    border-bottom: none;
+    font-size: 1.9rem;
+}
+header.sticky nav a{
+    color: var(--azul);
+    transition: all .45s ease;
+} 
+header.sticky nav a:hover{
+    color: var(--amarelo);
+    border-bottom: #FFD401 solid 1px;
+    transition: all .45s ease;
+} 
+header.sticky .button{
+    background: var(--verde);
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: #ffffff solid 2px;
+    color: var(--branco);
+} 
+header.sticky .button:hover{
+    background: var(--azul);
+    color: var(--amarelo);
+    border-bottom: none;
+    border: #FFD401 solid 2px;
+    transition: all .45s ease;
+} 
 .btn-mbl{
     display: none;
 }
@@ -112,49 +154,6 @@ nav .button:hover{
     border: #ffffff solid 2px;
     color: var(--branco);
 }
-header.sticky{
-    height: 88px;
-    background: var(--branco);
-    box-shadow: 0px 10px 10px 0px #00000072;
-    border-bottom: #00008c solid 5px;
-    transition: all .45s ease;
-}
-header.sticky .logo a{
-    color: var(--azul);
-    margin-right: 20px;
-}
-header.sticky .logo a span{
-    color: var(--amarelo);
-    text-shadow: #00000012 5px 5px 5px;
-}
-header.sticky .logo a:hover{
-    border-bottom: none;
-    font-size: 1.9rem;
-}
-header.sticky nav a{
-    color: var(--azul);
-    transition: all .45s ease;
-} 
-header.sticky nav a:hover{
-    color: var(--amarelo);
-    border-bottom: #FFD401 solid 1px;
-    transition: all .45s ease;
-} 
-header.sticky .button{
-    background: var(--verde);
-    padding: 7px 20px;
-    border-radius: 20px;
-    border: #ffffff solid 2px;
-    color: var(--branco);
-} 
-header.sticky .button:hover{
-    background: var(--azul);
-    color: var(--amarelo);
-    border-bottom: none;
-    border: #FFD401 solid 2px;
-    transition: all .45s ease;
-
-} 
 
 /*  Fim do Header/Nav  */
 /*  *************************************************** */
@@ -162,16 +161,11 @@ header.sticky .button:hover{
 main{/*background: rgb(255, 0, 0);*/
     text-align: center;
     margin: auto;
-
 }
 /*  Fim do Main  */
 /*  *************************************************** */
 /*  Inicio do Home  */
 .home{
-    /*background: rgb(249, 249, 249);
-    background: rgb(107,34,195);
-    background: linear-gradient(120deg, rgb(212, 212, 212) 0%, rgb(0, 47, 255) 100%);    
-    */
     background: url(../img/bg-home.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -245,8 +239,8 @@ main{/*background: rgb(255, 0, 0);*/
     height: 100%;
 }
 .home .container aside img{/*background: red;*/
-    width: 750px;
-    height: 600px;
+    width: 100%;
+    height: auto;
     margin: auto;
 }
 /*  Fim do Home  */
@@ -270,7 +264,6 @@ main{/*background: rgb(255, 0, 0);*/
     color: var(--azul);
     line-height: 1.5;
 }
-
 /*  Fim do Home2  */
 /*  *************************************************** */
 /*  Inicio do Soluções  */
@@ -357,13 +350,9 @@ main{/*background: rgb(255, 0, 0);*/
 .solucoes .container .box .row-one .link a i{
     margin-top: 30px;
 }
-
 /*  Fim da Soluções  */
-
 /*  *************************************************** */
-
 /*  Inicio do Diferenciais  */
-
 .diferenciais{ /*background: rgb(211, 211, 211);*/
     height: 100vh;
     padding: 100px 0 0 0;
@@ -452,7 +441,6 @@ main{/*background: rgb(255, 0, 0);*/
 .diferenciais .container .box a:hover{
     background: #FFD401;
 }
-
 /*  Fim do Diferenciais  */
 /*  *************************************************** */
 /*  Inicio do Trabalhos  */
@@ -696,7 +684,7 @@ main{/*background: rgb(255, 0, 0);*/
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 350px;
+    height: 220px;
     padding: 0px;
 }
 .contatos .btn-wa {
@@ -715,7 +703,6 @@ main{/*background: rgb(255, 0, 0);*/
     color: var(--azul);
     border-radius: 3px;
 }
-
 /*
 .contatos .container{ background: rebeccapurple;
     display: flex;
@@ -809,4 +796,3 @@ footer .rodape a:hover{
     font-weight: 200;
     color: rgb(255, 255, 255);
 }
-
