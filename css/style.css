@@ -702,62 +702,7 @@ main{/*background: rgb(255, 0, 0);*/
     color: var(--azul);
     border-radius: 3px;
 }
-/*
-.contatos .container{ background: rebeccapurple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-.contatos .container h1{
-    font-size: var(--fontam3);
-    color: var(--amarelo);
-}
-.contatos .container h2{
-    font-size: var(--fontam2);
-    color: rgb(255, 255, 255);
-}
-.contatos .txt{
-    color: var(--amarelo);
-}
-.contatos p{
-    font-size: 1.5rem;
-    line-height: .5;
-    color: white;
-}
-.contatos a{
-    background: green;
-    border-radius: 7px;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    padding: 10px 70px;
-    margin-top: 30px;
-    border: #ffffff solid 2px;
-}
-.contatos .redes{   background: rgb(33, 55, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 20px;
-}
-.contatos .redes a{ background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    font-size: 2rem;
-    color: rgb(6, 0, 94);
-    margin: 20px;
-    padding: 0 10px;
-    border-radius: 10px;
-}
+
 */
 /*  Fim do Contatos  */
 /*  *************************************************** */

@@ -345,8 +345,6 @@
         color: var(--amarelo);
     }
 }
-
-
 /*  Desktop - Web 1280  */
 @media screen and (min-width: 1024px) and (max-width: 1366px){
     *{
@@ -1059,7 +1057,6 @@
         height: 220px;
         margin: auto;
         padding: 0px;
-
         color: var(--amarelo);
     }
     .contatos .btn-wa {
@@ -1172,6 +1169,11 @@
         color: rgb(255, 255, 255);
     }
 }
+/*  Desktop - Web 1920  */
+@media screen and (min-width: 1367px) and (max-width: 1920px){
+
+}
+
 
 
 /*  Mobile - iPhone 14 Pro Max – 1  */
@@ -1182,5 +1184,3 @@
 @media screen and (min-width: 769px) and (max-width: 1024px){}
 /*  Desktop - Web 1366  */
 @media screen and (min-width: 1281px) and (max-width: 1366px){}
-/*  Desktop - Web 1920  */
-@media screen and (min-width: 1367px) and (max-width: 1920px){}
