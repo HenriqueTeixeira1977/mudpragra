@@ -120,6 +120,7 @@
         font-size: var(--fontam3);
         color: var(--branco);
         margin: 0 5px;
+        line-height: 1;
     }
     .logotipo span{
         color: var(--amarelo);
@@ -372,9 +373,9 @@
         --fontam6: clamp(1.6em, 1.5em + 3vw, 8rem);
         --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4.1rem);
         --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
-        --fontam3: clamp(1.2em, 1em + 1vw, 3rem);
+        --fontam3: clamp(1.2em, 1.2em + 1.2vw, 3rem);
         --fontam2: clamp(1.1em, .9em + .9vw, 2rem);
-        --fontam1: clamp(1em, .8em + .8vw, 1rem);
+        --fontam1: clamp(1em, .5em + .5vw, 1.5rem);
     }
     ::-webkit-scrollbar{
         width: 10px;
@@ -408,6 +409,7 @@
     }
     header.sticky{
         height: 78px;
+        padding: 0 2%;
         background: var(--branco);
         box-shadow: 0px 10px 10px 0px #00000072;
         border-bottom: #00008c solid 5px;
@@ -415,7 +417,7 @@
     }
     header.sticky .logo a{
         color: var(--azul);
-        margin: 5px;
+        margin: 0px;
     }
     header.sticky .logo a span{
         color: var(--amarelo);
@@ -428,6 +430,8 @@
     header.sticky nav a{
         color: var(--azul);
         transition: all .45s ease;
+        margin: 5px;
+
     } 
     header.sticky nav a:hover{
         color: var(--amarelo);
@@ -435,6 +439,7 @@
         transition: all .45s ease;
     } 
     header.sticky .button{
+        font-size: var(--fontam1);
         background: var(--verde);
         padding: 3px 10px;
         border-radius: 20px;
@@ -460,7 +465,13 @@
         width: 50px;
         margin: 10px 0;
     }
-    .logo a{  /*background:rebeccapurple; */
+    .logo .logo-txt{
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        padding: 5px;
+    }
+    .logo .logo-txt a{  /*background:rebeccapurple; */
         font-size: var(--fonta3);
         color: var(--amarelo);
     }
@@ -646,7 +657,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /*flex-wrap: wrap;*/
         width: 90%;
         height: 50%;
         margin-top: 10px;
@@ -657,10 +667,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /*flex-wrap: wrap;*/
         width: 90%;
         height: 50%;
-        margin-top: 50px;
         margin: auto;
     }
     .solucoes .container .box{
@@ -708,7 +716,7 @@
     .diferenciais{ 
         background: #eeeeee;
         height: 100vh;
-        padding: 100px 0 0 0;
+        padding: 80px 0 0 0;
     }
     .diferenciais .titulo{ /*background: rebeccapurple;*/
         width: 80%;
@@ -728,27 +736,30 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
-        height: 80%;
+        height: 90%;
         margin: auto;
     }
     .diferenciais .container .row-one{ /*background: red;*/
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin: auto;
+        align-items: center;
         width: 90%;
         height: 50%;
+        margin: auto;
+        padding: 10px;
+
     }
     .diferenciais .container .row-two{ /*background: green;*/
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
         width: 90%;
         height: 50%;
+        margin: auto;
+        margin-top: 0px;
+
     }
     .diferenciais .container .box{
         background: var(--azul);
@@ -756,14 +767,23 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        width: 300px;
-        height: 200px;
-        margin: 20px;
-        padding: 20px;
+        width: 400px;
+        height: 250px;
+        margin: 10px;
+        padding: 10px;
         border-radius: 10px;
         border: 2px solid #ffffff;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
         color: white;
+/*        background: var(--branco);
+        width: 400px;
+        height: 250px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 140, 0.078);
+        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.212);  */
+
     }
     .diferenciais .container .box:hover{
         background: var(--branco);
@@ -841,7 +861,7 @@
         object-fit: cover;
         border-radius: 5px;
     }
-    .trabalhos .container .box{background: #FFD401;
+    .trabalhos .container .box{/*background: #FFD401;*/
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -854,7 +874,7 @@
         border: 5px solid #ffffff;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
     }
-    .trabalhos .container .box img{ background: red;
+    .trabalhos .container .box img{ /*background: red;*/
         width: 300px;
         height: 70%;
         margin: 0;
@@ -902,10 +922,10 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        width: 300px;
-        height: 400px;
-        margin: 20px;
-        padding: 20px;
+        width: 30%;
+        height: 350px;
+        margin: 10px;
+        padding: 10px;
         color: var(--azul);
         border-radius: 10px;
         border: 5px solid #ffffff;
@@ -938,21 +958,220 @@
         color: var(--branco);
         border: 2px solid var(--branco);
     }
+    /*  Fim do Depoimentos  */
+    /*  *************************************************** */
+    /*  Inicio do Sobre  */
+    .sobre{ 
+        height: 90vh;
+        padding: 80px 0 0 0;
+        background: var(--branco);
+    }
+    .sobre .container{ /*background: rgb(18, 215, 0);*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .sobre article{ /*background: blue;*/
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+        text-align: right;
+        padding: 20px;
+    }
+    .sobre article h1{
+        font-size: var(--fontam3);
+        text-align: left;
+        line-height: 1;
+        color: rgb(0, 0, 170); 
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.357); 
+        margin-bottom: 20px ;  
+    }
+    .sobre article h2{
+        font-size: var(--fontam2);
+        line-height: 1;
+        color: rgb(255, 225, 0);
+        text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.207);   
+    }
+    .sobre article p{
+        font-size: var(--fontam1);
+        line-height: 1.7;
+        width: 90%;
+        margin: 10px 0;
+    }
+    .sobre article a{
+        background: green;
+        border-radius: 7px;
+        font-size: var(--fontam1);
+        color: rgb(255, 255, 255);
+        padding: 10px 70px;
+        margin-top: 0px;
+    }
+    .sobre aside{ /*background: rgb(255, 255, 0);*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90%;
+    }
+    .sobre aside img{
+        width: 70%;
+    }
+    /*  Fim do Sobre  */
+    /*  *************************************************** */
+    /*  Inicio do Contatos  */
+    .contatos{ background: rgb(255, 230, 0);
+        height: 500px;
+        padding: 70px 0 0 0;
+    }
+    .contatos .contatos-txt{ /*background: #000000;*/
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+    }
+    .contatos .contatos-txt h1{
+        font-size: var(--fontam4);
+        color: var(--azul);
+    }
+    .contatos .contatos-txt span{
+        color: var(--amarelo);
+    }
+    .contatos .contatos-txt p{
+        color: var(--azul);
+    }
+    .contatos .iframe iframe{
+        margin: auto;
+        width: 100%;
+        height: 40vh;
+    }
+    .contatos .container{ background: var(--azul);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        height: 220px;
+        margin: auto;
+        padding: 0px;
 
-
-
-
+        color: var(--amarelo);
+    }
+    .contatos .btn-wa {
+        width: 300px;
+        margin: 20px;
+        padding: 5px 0;
+        background: var(--verde);
+        color: var(--branco);
+        border: 2px solid var(--branco);
+        border-radius: 7px;
+    }
+    .contatos .redes a {
+        margin: 20px;
+        padding: 5px 10px;
+        background: var(--branco);
+        color: var(--azul);
+        border-radius: 3px;
+    }
+    /*
+    .contatos .container{ background: rebeccapurple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .contatos .container h1{
+        font-size: var(--fontam3);
+        color: var(--amarelo);
+    }
+    .contatos .container h2{
+        font-size: var(--fontam2);
+        color: rgb(255, 255, 255);
+    }
+    .contatos .txt{
+        color: var(--amarelo);
+    }
+    .contatos p{
+        font-size: 1.5rem;
+        line-height: .5;
+        color: white;
+    }
+    .contatos a{
+        background: green;
+        border-radius: 7px;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        padding: 10px 70px;
+        margin-top: 30px;
+        border: #ffffff solid 2px;
+    }
+    .contatos .redes{   background: rgb(33, 55, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    .contatos .redes a{ background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+        color: rgb(6, 0, 94);
+        margin: 20px;
+        padding: 0 10px;
+        border-radius: 10px;
+    }
+    */
+    /*  Fim do Contatos  */
+    /*  *************************************************** */
+    /*  Inicio do Footer  */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+        width: 100%;
+        height: 150px;
+        font-weight: 200;
+        color: aliceblue;
+        text-align: center;
+        padding: 30px 0;
+    }
+    footer .menu-footer a{
+        font-size: 1rem;
+        padding: 5px;
+        font-weight: 200;
+        color: rgb(255, 251, 0);
+    }
+    footer .menu-footer a:hover{
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+    }
+    footer .rodape a{
+        font-size: .8rem;
+        font-weight: 200;
+        color: rgb(255, 251, 0);
+    }
+    footer .rodape a:hover{
+        font-size: 1rem;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*  Mobile - iPhone 14 Pro Max – 1  */

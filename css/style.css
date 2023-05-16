@@ -22,8 +22,7 @@ body{
     --amarelo: #FFD401;
     --verde: #29A71A;
     --preto: #000000;
-    --branco: #FFFFFF;  
-
+    --branco: #FFFFFF;
     --fontam6: clamp(1.6em, 1.5em + 3vw, 8rem);
     --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4.1rem);
     --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
