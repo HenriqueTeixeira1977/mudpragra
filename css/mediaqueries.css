@@ -357,7 +357,7 @@
         scroll-behavior: smooth;
         transition: all .1s ease;
     }
-    body{background: #ff0000;
+    body{
         margin: auto;
         padding: 0;
     }
