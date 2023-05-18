@@ -1593,26 +1593,17 @@
     .diferenciais .container .box{
         background: var(--azul);
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 400px;
-        height: 350px;
-        margin: 10px;
+        width: 30%;
+        height: 330px;
+        margin: 20px;
         padding: 10px;
         border-radius: 10px;
         border: 2px solid #ffffff;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
         color: white;
-/*        background: var(--branco);
-        width: 400px;
-        height: 250px;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        border: 2px solid rgba(0, 0, 140, 0.078);
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.212);  */
-
     }
     .diferenciais .container .box:hover{
         background: var(--branco);
@@ -2740,9 +2731,6 @@
         color: rgb(255, 255, 255);
     }
 }
-
-
-
 /*  Mobile - iPhone 14 Pro Max – 1  */
 @media screen and (min-width: 376px) and (max-width: 430px){}
 /*  Tablet - iPad  */
