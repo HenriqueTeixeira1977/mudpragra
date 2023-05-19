@@ -1961,7 +1961,7 @@
         scroll-behavior: smooth;
         transition: all .3s ease;
     }
-    body{background: #ff0000;
+    body{
         margin: auto;
         padding: 0;
     }
@@ -2601,7 +2601,7 @@
         text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.207);   
     }
     .sobre article p{
-        font-size: var(--fontam1);
+        font-size: var(--fontam2);
         line-height: 1.7;
         width: 90%;
         margin: 10px 0;
