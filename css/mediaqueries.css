@@ -25,11 +25,11 @@
         --verde: #29A71A;
         --preto: #000000;
         --branco: #FFFFFF;  
-        --fontam6: clamp(1.6em, 1.5em + 3vw, 8rem);
-        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4.1rem);
-        --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
-        --fontam3: clamp(1.1em, .75em + 1.5vw, 3rem);
-        --fontam2: clamp(1.05em, .6em + 1vw, 2rem);
+        --fontam6: clamp(1.6em, 1.5em + 3vw, 5rem);
+        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4rem);
+        --fontam4: clamp(1.3em, 1em + 2vw, 3rem);
+        --fontam3: clamp(1.1em, .75em + 1.5vw, 2rem);
+        --fontam2: clamp(1.05em, .6em + 1vw, 1.5rem);
         --fontam1: clamp(.5em, .5em + .7vw, 1rem);
     }
 /*  Fim do Body  */
@@ -152,23 +152,26 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: auto;
-    }
-    .home .container{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 100vh;
+
+    }
+    .home .container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         flex-direction: column-reverse;
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
         text-align: center;
         margin: auto;
         width: 90%;
-        height: 100vh;
+        height: 70%;
     }
-    .home .container aside img{ /*background:yellow;*/
-        max-width:50%;
-        height: auto;
+    .home .container aside img{
+        max-width:70%;
     }
     .home .container article{
         width: 100%;
@@ -188,16 +191,16 @@
     }
     .home .container article h3{
         font-size: var(--fontam3);    
-        margin: 30px 0;    
+        margin-bottom: 70px;    
     }
     .home .container a{
         background: var(--verde);
         border-radius: 7px;
         border: #ffffff solid 3px;
-        font-size: var(--fontam3);
+        font-size: var(--fontam4);
         color: var(--branco);
         padding: 10px 30px;
-        margin: 00px 0;    
+        margin: 0px 0;    
     }
 /*  Fim do Home  */
 /*  *************************************************** */
@@ -257,7 +260,7 @@
     .solucoes .container .box{
         background: var(--branco);
         max-width: 500px;
-        margin: 10px;
+        margin: 30px;
         padding: 30px;
         border-radius: 10px;
         border: 2px solid rgba(0, 0, 140, 0.078);
@@ -266,6 +269,17 @@
     .solucoes .container .box:hover{
         background: var(--amarelo);
         transform: translateY(-8px);
+    }
+    .solucoes .container .box p{
+        margin-bottom: 30px;
+    }
+    .solucoes .container .box a{
+        margin: 50px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        border: 2px solid var(--azul);
+        color: var(--azul);
+
     }
 /*  Fim da Soluções  */
 /*  ************************
