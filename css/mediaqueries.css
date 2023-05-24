@@ -25,9 +25,9 @@
         --verde: #29A71A;
         --preto: #000000;
         --branco: #FFFFFF;  
-        --fontam6: clamp(1.6em, 1.5em + 3vw, 5rem);
-        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 4rem);
-        --fontam4: clamp(1.3em, 1em + 2vw, 3rem);
+        --fontam6: clamp(1.6em, 1.5em + 3vw, 6rem);
+        --fontam5: clamp(1.5em, 1.1em + 2.3vw, 5rem);
+        --fontam4: clamp(1.3em, 1em + 2vw, 4rem);
         --fontam3: clamp(1.1em, .75em + 1.5vw, 2rem);
         --fontam2: clamp(1.05em, .6em + 1vw, 1.5rem);
         --fontam1: clamp(.5em, .5em + .7vw, 1rem);
@@ -293,7 +293,7 @@
 /*  *************************************************** */
 /*  Inicio do Trabalhos  */
 .trabalhos{background: rgb(247, 247, 247);
-    height: 200vh;
+    height: 1300px;
     padding: 80px 0 0 0;
 }
 .trabalhos-titulo{ 
@@ -320,8 +320,8 @@
     margin: auto;
 }
 .trabalhos .container-galeria .img-galeria{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 300px;
     border: 5px solid #00008c;
     box-shadow: 5px 5px 5px #00000078;
     border-radius: 10px;
@@ -343,7 +343,7 @@
     align-items: center;
     flex-direction: column;
     width: 9%;
-    height: 600px;
+    height: 200px;
     margin: 0px;
     padding: 10px;
     border-radius: 10px;
@@ -520,7 +520,7 @@
         transition: all .45s ease;
     } 
     header.sticky .button{
-        font-size: var(--fontam1);
+        font-size: .8rem;
         background: var(--verde);
         padding: 3px 10px;
         border-radius: 20px;
@@ -560,8 +560,8 @@
         color: var(--branco);
     }
     .logo a:hover{
-        font-size: var(--fontam3);
-        color: #00008c;
+        font-size: var(--fontam1);
+        color: #ffffff;
     }
     nav{/*background: red;*/
         color: var(--branco);
@@ -583,6 +583,7 @@
         padding: 3px 10px;
         border-radius: 20px;
         border: #ffffff solid 2px;
+        font-size: .8rem;
         color: var(--branco);
     }
     nav .button:hover{
@@ -1101,12 +1102,11 @@
     /*  Fim do Sobre  */
     /*  *************************************************** */
     /*  Inicio do Contatos  */
-    .contatos{ 
+    .contatos{  background: #00008c;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #000040;
         height: 600px;
         padding: 80px 0 0 0;
     }
@@ -1124,6 +1124,8 @@
         color: var(--amarelo);
     }
     .contatos .contatos-txt p{
+        font-size: var(--fontam1);
+        line-height: 1;
         color: var(--branco);
     }
     .contatos .iframe iframe{
@@ -1131,15 +1133,15 @@
         width: 100%;
         height: 40vh;
     }
-    .contatos .container{ /*background: var(--azul);*/
+    .contatos .container{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        width: 70%;
+        width: 90%;
         height: 70%;
         margin: auto;
-        padding: 30px 0;
+        padding: 10px 0 30px 0;
         color: var(--amarelo);
     }
     .contatos .container h1{
@@ -1147,14 +1149,16 @@
     }
     .contatos .container p{
         font-size: var(--fontam2);
+        line-height: 1.3;
     }
     .contatos .redes {
+        height: 90px;
         margin: 20px;
     }
     .contatos .redes a {
         margin: 20px 10px;
         padding: 5px 12px;
-        font-size: var(--fontam2);
+        font-size: var(--fontam1);
         color: var(--branco);
         border-radius: 5px;
         border: 2px solid #ffffff;
@@ -1162,12 +1166,13 @@
     .contatos .btn-wa {
         width: 300px;
         margin: 0px;
-        padding: 5px 0;
+        padding: 5px 0px;
         background: var(--verde);
         color: var(--branco);
         border: 2px solid var(--branco);
         border-radius: 7px;
     }
+    /*
     .contatos .container{ background: rebeccapurple;
         display: flex;
         justify-content: center;
@@ -1177,6 +1182,7 @@
         height: 100%;
         margin: auto;
     }
+    */
     .contatos .container h1{
         font-size: var(--fontam3);
         color: var(--amarelo);
@@ -1196,22 +1202,23 @@
     .contatos a{
         background: green;
         border-radius: 7px;
-        font-size: 2rem;
+        font-size: var(--fontam2);
         color: rgb(255, 255, 255);
         padding: 10px 70px;
         margin-top: 30px;
         border: #ffffff solid 2px;
     }
-    .contatos .redes{   background: rgb(33, 55, 0);
+    .contatos .redes{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 20%;
         margin: auto;
         padding: 20px;
     }
-    .contatos .redes a{ background: rgb(255, 255, 255);
+    .contatos .redes a{ 
+        background: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1223,7 +1230,7 @@
         padding: 0 10px;
         border-radius: 10px;
     }
-    */
+    
     /*  Fim do Contatos  */
     /*  *************************************************** */
     /*  Inicio do Footer  */
