@@ -456,14 +456,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
 /*  Desktop - Web 1280  */
 @media screen and (min-width: 1024px) and (max-width: 1366px){
     *{
@@ -1251,13 +1243,6 @@
     }
 }
 
-
-
-
-
-
-
-
 /*  Desktop - Web 1920  */
 @media screen and (min-width: 1367px) and (max-width: 1920px){
     *{
@@ -2037,12 +2022,6 @@
         color: rgb(255, 255, 255);
     }
 }
-
-
-
-
-
-
 
 /*  Desktop - Web 1921+  */
 @media (min-width: 1921px){
@@ -2832,26 +2811,13 @@
 
 
 
+/*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  Mobile - iPhone 14 Pro Max – 1  */
-@media screen and (min-width: 376px) and (max-width: 430px){}
-/*  Tablet - iPad  */
-@media screen and (min-width: 431px) and (max-width: 768px){}
-/*  Tablet - iPad Pro 12,9"  */
-@media screen and (min-width: 769px) and (max-width: 1024px){}
-/*  Desktop - Web 1366  */
-@media screen and (min-width: 1281px) and (max-width: 1366px){}
+  /*  Mobile - iPhone 14 Pro Max – 1  */
+/*  @media screen and (min-width: 376px) and (max-width: 430px){}  */
+  /*  Tablet - iPad  */
+/*  @media screen and (min-width: 431px) and (max-width: 768px){}  */
+  /*  Tablet - iPad Pro 12,9"  */
+/*  @media screen and (min-width: 769px) and (max-width: 1024px){}  */
+  /*  *********Desktop - Web 1366**********  */
+/*  @media screen and (min-width: 1281px) and (max-width: 1366px){}  */
