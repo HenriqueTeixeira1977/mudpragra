@@ -631,7 +631,7 @@
 /*  *************************************************** */
 /*  Inicio do Home  */
     .home{
-        background: url(../img/bg-home.png);
+        background: url(../img/bg-home1024.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -737,8 +737,8 @@
     /*  Fim do Home2  */
     /*  *************************************************** */
     /*  Inicio do Soluções  */
-    .solucoes{background: #eeeeee;
-        height: 100vh;
+    .solucoes{
+        height: 900px;
         padding: 80px 0 0 0;
     }
     .solucoes h1{
@@ -772,7 +772,7 @@
         margin-top: 10px;
         margin: auto;
     }
-    .solucoes .container .row-two{ /*background: rgb(0, 255, 17);*/
+    .solucoes .container .row-two{ /*background: rgb(0, 135, 9);*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -783,7 +783,7 @@
     .solucoes .container .box{
         background: var(--branco);
         width: 400px;
-        height: 250px;
+        height: 350px;
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
@@ -797,14 +797,14 @@
     .solucoes .container .box i{
         color: var(--azul);
         margin: 10px;
-        font-size: var(--fontam4);    
+        font-size: var(--fontam2);    
     }
     .solucoes .container .box h2{
         font-size: var(--fontam1);
         margin: 10px;
     }
     .solucoes .container .box p {
-        font-size: .7rem;
+        font-size: 1rem;
         margin: 10px;
     }
     .solucoes .container .box .link{
@@ -822,9 +822,8 @@
     /*  Fim da Soluções  */
     /*  *************************************************** */
     /*  Inicio do Diferenciais  */
-    .diferenciais{ 
-        background: #eeeeee;
-        height: 100vh;
+    .diferenciais{ /*background: rebeccapurple;*/
+        height: 900px;
         padding: 80px 0 0 0;
     }
     .diferenciais .titulo{ /*background: rebeccapurple;*/
@@ -867,26 +866,21 @@
         margin: auto;
     }
     .diferenciais .container .box{
-        background: var(--azul);
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        width: 400px;
-        height: 200px;
+        
+        width: 300px;
+        height: 300px;
         margin: 10px;
         padding: 10px;
+
+        background: var(--azul);
         border-radius: 10px;
         border: 2px solid #ffffff;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.326);
         color: white;
-        width: 400px;
-        height: 250px;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        border: 2px solid rgba(0, 0, 140, 0.078);
-        box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.212);
 
     }
     .diferenciais .container .box:hover{
@@ -901,17 +895,19 @@
     }
     .diferenciais .container .box h2{
         font-size: var(--fontam1);
+        color: var(--amarelo);
         margin: 0px;
     }
-    .diferenciais .container .box p{display: none;
+    .diferenciais .container .box p{
+        display: block;
         font-size: var(--fontam1);
         margin: 0px;
     }
     .diferenciais .container .box a{
         font-size: var(--fontam1);
-        margin: 20px;
+        margin: 10px;
         background: var(--branco);
-        padding: 5px 50px;
+        padding: 5px 70px;
         border: solid 2px #00008c;
         border-radius: 10px;
     }
@@ -921,8 +917,8 @@
 /*  Fim do Diferenciais  */
 /*  *************************************************** */
 /*  Inicio do Trabalhos  */
-    .trabalhos{background: rgb(247, 247, 247);
-        height: 100vh;
+    .trabalhos{  /*background: rgb(247, 247, 247);*/
+        height: 70vh;
         padding: 80px 0 0 0;
     }
     .trabalhos-titulo{ 
@@ -1066,7 +1062,7 @@
     /*  *************************************************** */
     /*  Inicio do Sobre  */
     .sobre{ 
-        height: 90vh;
+        height: 800px;
         padding: 80px 0 0 0;
         background: var(--branco);
     }
@@ -1242,6 +1238,14 @@
         color: rgb(255, 255, 255);
     }
 }
+
+
+
+
+
+
+
+
 
 /*  Desktop - Web 1920  */
 @media screen and (min-width: 1367px) and (max-width: 1920px){
@@ -1980,7 +1984,6 @@
         border: 2px solid var(--branco);
         border-radius: 7px;
     }
-
     /*  Fim do Contatos  */
     /*  *************************************************** */
     /*  Inicio do Footer  */
