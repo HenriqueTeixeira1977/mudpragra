@@ -170,7 +170,8 @@
     }
     .home .container aside img{
         max-width:50%;
-    }
+        height: auto;
+        margin: auto;    }
     .home .container article{
         width: 100%;
         height: auto;
