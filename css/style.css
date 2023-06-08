@@ -146,7 +146,7 @@
     /*  Fim do Main  */
     /*  *************************************************** */
     /*  Inicio do Home  */
-    .home{
+    .home{ background: red;
         background: url(../img/bg1-home-mbl.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -162,18 +162,20 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: column-reverse;
-        flex-wrap: wrap;    
+        /*flex-wrap: wrap;    */
         text-align: center;
         margin: auto;
         width: 90%;
         height: 70%;
     }
     .home .container aside img{
-        max-width:50%;
-        height: auto;
-        margin: auto;    }
-    .home .container article{
+        max-width:50vw;
         width: 100%;
+        height: 100%;
+        margin: auto;    
+    }
+    .home .container article{
+        width: 90%;
         height: auto;
         text-align: center;
         color: var(--branco);
@@ -190,13 +192,13 @@
     }
     .home .container article h3{
         font-size: var(--fontam3);    
-        margin-bottom: 70px;    
+        margin-bottom: 30px;    
     }
     .home .container a{
         background: var(--verde);
         border-radius: 7px;
         border: #ffffff solid 3px;
-        font-size: var(--fontam4);
+        font-size: var(--fontam3);
         color: var(--branco);
         padding: 10px 30px;
         margin: 0px 0;    

@@ -215,7 +215,7 @@
         color: var(--branco);
     }
     .home .container article h2{
-        font-size: var(--fontam1);
+        font-size: var(--fontam2);
         font-weight: 300;
         color: var(--branco);
         margin: 0;
@@ -794,10 +794,6 @@
         color: rgb(255, 255, 255);
     }
 }
-
-
-
-
 /*  Desktop - Web 1920  */
 @media screen and (min-width: 1367px) and (max-width: 1920px){
     *{
@@ -1588,11 +1584,6 @@
         color: rgb(255, 255, 255);
     }
 }
-
-
-
-
-
 /*  Desktop - Web +1921  */
 @media (min-width: 1921px){
     *{
