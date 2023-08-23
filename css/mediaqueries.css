@@ -240,6 +240,18 @@
     .home .container article a:hover{
         background: rgb(1, 102, 1);
     }
+    .home .container .btn-phone{
+        background: var(--azul);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam2);
+        color: var(--branco);
+        padding: 10px 70px;
+        margin-top: 30px;
+    }
+    .home .container article a:hover{
+        background: rgb(1, 102, 1);
+    }
     .home .container aside{
         display: flex;
         justify-content: flex-start;
