@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /*  Desktop - Web 1280  */
 @media screen and (min-width: 1024px) and (max-width: 1366px){
     *{
@@ -240,18 +238,51 @@
     .home .container article a:hover{
         background: rgb(1, 102, 1);
     }
-    .home .container .btn-phone{
-        background: var(--azul);
+
+    .home .container article a:hover{
+        background: rgb(1, 102, 1);
+    }
+    .botoes{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 100px 0;
+    }    
+    .home .container .btn-wa a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-wa a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 60px;
+        margin: 10px 0;       
+        background: var(--verde);
         border-radius: 7px;
         border: #ffffff solid 3px;
         font-size: var(--fontam2);
         color: var(--branco);
-        padding: 10px 70px;
-        margin-top: 30px;
     }
-    .home .container article a:hover{
-        background: rgb(1, 102, 1);
+    .home .container .btn-phone a{
+        color: #FFFFFF;
     }
+    .home .container .btn-phone a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 60px;
+        margin: 10px 0;
+        background: var(--azul);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam1);
+        color: var(--branco);
+    } 
     .home .container aside{
         display: flex;
         justify-content: flex-start;
@@ -1032,7 +1063,7 @@
         color: var(--branco);
         margin: 0;
         padding: 0;
-    }
+    }/*
     .home .container article a{
         background: var(--verde);
         border-radius: 7px;
@@ -1041,10 +1072,51 @@
         color: var(--branco);
         padding: 10px 70px;
         margin-top: 30px;
-    }
+    }*/
     .home .container article a:hover{
         background: rgb(1, 102, 1);
     }
+    .botoes{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 100px 0;
+    }    
+    .home .container .btn-wa a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-wa a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 70px;
+        margin: 10px 0;       
+        background: var(--verde);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam2);
+        color: var(--branco);
+    }
+    .home .container .btn-phone a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-phone a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 70px;
+        margin: 10px 0;
+        background: var(--azul);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam2);
+        color: var(--branco);
+    }    
     .home .container aside{ 
         display: flex;
         justify-content: flex-start;
@@ -1836,6 +1908,39 @@
     .home .container article a:hover{
         background: rgb(1, 102, 1);
     }
+    .botoes{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 100px 0;
+    }    
+    .home .container .btn-wa a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-wa a{
+        display: block;
+        margin: 10px 0;        
+        background: var(--verde);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam2);
+        color: var(--branco);
+    }
+    .home .container .btn-phone a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-phone a{
+        display: block;
+        margin: 10px 0;        
+        background: var(--azul);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam1);
+        color: var(--branco);
+    }
     .home .container aside{ 
         display: flex;
         justify-content: flex-start;
@@ -2388,10 +2493,6 @@
         color: rgb(255, 255, 255);
     }
 }
-
-
-
-/*
 
   /*  Mobile - iPhone 14 Pro Max – 1  */
 /*  @media screen and (min-width: 376px) and (max-width: 430px){}  */

@@ -194,14 +194,29 @@
         font-size: var(--fontam3);    
         margin-bottom: 30px;    
     }
-    .home .container a{
+    .home .container .btn-wa a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-wa {
         background: var(--verde);
         border-radius: 7px;
         border: #ffffff solid 3px;
-        font-size: var(--fontam3);
+        font-size: var(--fontam2);
         color: var(--branco);
-        padding: 10px 30px;
-        margin: 0px 0;    
+        padding: 10px 10px;
+        margin: 10px 0px;    
+    }
+    .home .container .btn-phone a{
+        color: #FFFFFF;
+    }
+    .home .container .btn-phone {
+        background: var(--azul);
+        border-radius: 7px;
+        border: #ffffff solid 3px;
+        font-size: var(--fontam1);
+        color: var(--branco);
+        padding: 10px 10px;
+        margin: 10px 0px 0px 0px;
     }
     /*  Fim do Home  */
     /*  *************************************************** */
